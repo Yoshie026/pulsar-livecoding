@@ -1,0 +1,19 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Launcher",
+          "submenu": [
+            { "label": "Start All", "command": "launcher:start-all" },
+            { "label": "Stop All", "command": "launcher:stop-all" },
+            { "label": "Restart All", "command": "launcher:restart-all" },
+            { "label": "Show Log", "command": "launcher:show-log" },
+            { "label": "Edit Config", "command": "launcher:edit-config" }
+          ]
+        }
+      ]
+    }
+  ]
+}

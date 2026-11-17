@@ -1,0 +1,15 @@
+{
+  "name": "hydra-osc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-syphon": "^1.5.1",
+    "osc-js": "^2.2.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "processes": [
+    {
+      "name": "syphon",
+      "command": "node syphon-bridge.js",
+      "cwd": "~/Developments/pulsar-livecoding/bridge",
+      "env": { "SYPHON_SERVER": "UE5" },
+      "autostart": true
+    },
+    {
+      "name": "osc",
+      "command": "node server.js",
+      "cwd": "~/Developments/pulsar-livecoding/bridge",
+      "autostart": false
+    },
+    {
+      "name": "flok",
+      "command": "npm run dev",
+      "cwd": "~/Developments/flok/packages/web",
+      "autostart": false
+    }
+  ]
+}

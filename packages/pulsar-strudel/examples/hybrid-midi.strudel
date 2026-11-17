@@ -1,0 +1,13 @@
+// drums in Strudel + melody to an external synth over MIDI
+// Packages > Strudel > List MIDI Outputs for exact names; SINGLE quotes for the name
+setcpm(120 / 4)
+
+$: s("bd [~ bd] sd [bd ~]").bank("RolandTR808")
+
+$: note("<[c3 eb3 g3] [ab2 c3 eb3]>").arp("0 1 2 1")
+  .velocity(perlin.range(.5, 1))
+  .midichan(1)
+  .midi('IAC_Driver Bus 1')
+
+// sweep filter on the synth: CC74 (cutoff on most synths)
+$: ccv(saw.slow(8)).ccn(74).midichan(1).midi('IAC_Driver Bus 1')

@@ -1,0 +1,13 @@
+{
+  "atom-workspace atom-text-editor[data-grammar~='js']": {
+    "ctrl-alt-o": "pulsar-hydra:toggle",
+    "shift-enter": "pulsar-hydra:evalLine",
+    "ctrl-enter": "pulsar-hydra:evalBlock",
+    "ctrl-alt-enter": "pulsar-hydra:evalCode",
+    "ctrl-alt-m": "pulsar-hydra:randomChange",
+    "ctrl-alt-shift-m": "pulsar-hydra:rerollChange"
+  },
+  "atom-workspace": {
+    "ctrl-shift-h": "pulsar-hydra:toggleVisibility"
+  }
+}

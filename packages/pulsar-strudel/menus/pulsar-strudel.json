@@ -1,0 +1,43 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Livecoding",
+          "submenu": [
+            {
+              "label": "Strudel",
+              "submenu": [
+                {
+                  "label": "Strudel",
+                  "type": "checkbox",
+                  "command": "pulsar-strudel:toggle"
+                },
+                {
+                  "type": "separator"
+                },
+                {
+                  "label": "Evaluate File",
+                  "command": "pulsar-strudel:evalCode"
+                },
+                {
+                  "label": "Evaluate Block",
+                  "command": "pulsar-strudel:evalBlock"
+                },
+                {
+                  "label": "Hush",
+                  "command": "pulsar-strudel:hush"
+                },
+                {
+                  "label": "List MIDI Outputs",
+                  "command": "pulsar-strudel:listMidiOutputs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

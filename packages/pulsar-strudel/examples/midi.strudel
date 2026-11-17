@@ -1,0 +1,9 @@
+// Packages > Strudel > List MIDI Outputs shows the exact device names.
+// Device names go in SINGLE quotes -- double quotes are mini-notation.
+$: note("<c3 eb3 g3 bb3>*2").midi('IAC_Driver Bus 1')
+
+// midichan picks the channel (1-16), velocity is 0-1
+$: note("c2 ~ c2 g1").midichan(2).velocity(.8).midi('IAC_Driver Bus 1')
+
+// CC: ccn = controller number, ccv = value 0-1
+$: ccv(sine.slow(4)).ccn(74).midi('IAC_Driver Bus 1')

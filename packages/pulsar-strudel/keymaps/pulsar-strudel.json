@@ -1,0 +1,10 @@
+{
+  "atom-workspace atom-text-editor[data-grammar~='strudel']": {
+    "ctrl-enter": "pulsar-strudel:evalCode",
+    "shift-enter": "pulsar-strudel:evalBlock",
+    "ctrl-.": "pulsar-strudel:hush"
+  },
+  "atom-workspace": {
+    "ctrl-alt-s": "pulsar-strudel:toggle"
+  }
+}

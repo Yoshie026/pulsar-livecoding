@@ -1,0 +1,20 @@
+{
+  "name": "launcher",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "Start and stop live-coding helper processes (syphon bridge, osc bridge, flok) from Pulsar",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

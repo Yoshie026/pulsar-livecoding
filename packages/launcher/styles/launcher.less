@@ -1,0 +1,11 @@
+@import "ui-variables";
+
+.launcher-status {
+  .launcher-item {
+    cursor: pointer;
+    margin-right: 0.6em;
+    &::before { content: "● "; color: @text-color-subtle; }
+    &.running::before { color: @text-color-success; }
+    &.crashed::before { color: @text-color-error; }
+  }
+}

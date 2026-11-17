@@ -1,0 +1,3 @@
+// ctrl-enter: play the whole file   shift-enter: play this block   ctrl-.: hush
+$: s("bd*2 [~ bd] sd hh*4").bank("RolandTR909")
+$: note("<c2 eb2 g1 bb1>").s("sawtooth").lpf(400).decay(.2).sustain(0)

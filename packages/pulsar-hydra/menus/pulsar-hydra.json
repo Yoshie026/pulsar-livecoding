@@ -1,0 +1,42 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle hydra",
+        "command": "pulsar-hydra:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Livecoding",
+          "submenu": [
+            {
+              "label": "Hydra",
+              "submenu": [
+                {
+                  "label": "Hydra",
+                  "type": "checkbox",
+                  "command": "pulsar-hydra:toggle"
+                },
+                {
+                  "label": "Syphon",
+                  "type": "checkbox",
+                  "command": "pulsar-hydra:toggleSyphon"
+                },
+                {
+                  "label": "UDP",
+                  "type": "checkbox",
+                  "command": "pulsar-hydra:toggleUdp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

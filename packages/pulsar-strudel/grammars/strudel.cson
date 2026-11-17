@@ -1,0 +1,8 @@
+# Strudel is JavaScript; a separate grammar lets keymaps tell .strudel files
+# apart from hydra's .js files.
+scopeName: 'source.strudel'
+name: 'Strudel'
+fileTypes: ['strudel', 'str']
+patterns: [
+  { include: 'source.js' }
+]

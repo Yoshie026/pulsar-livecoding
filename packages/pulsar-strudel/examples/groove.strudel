@@ -1,0 +1,15 @@
+// ctrl-enter: play whole file   shift-enter: only this block   ctrl-.: hush
+setcpm(118 / 4)
+
+$: s("bd*4").bank("RolandTR909").gain(.9)
+$: s("~ cp ~ cp").bank("RolandTR909").room(.2)
+$: s("hh*8").bank("RolandTR909").gain(sine.range(.3, .7).fast(2))
+
+// filtered bass, cutoff slowly opening
+$: note("<a1 a1 c2 g1>*4")
+  .s("sawtooth").lpf(sine.range(300, 1800).slow(8)).lpq(6)
+  .decay(.15).sustain(0)
+
+// sparse pad with randomness
+$: n("<0 2 4 [6 7]>").scale("A:minor").s("piano")
+  .degradeBy(.3).room(.6).delay(.25)
